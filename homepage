@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>New York Railway Tracking System</title>
+
+<!-- Example date form
+<input type='date' id='hasta' value='<?php echo date('Y-m-d');?>
+-->
+
+
+
+
+</head>
+
+<body>
+
+<center>
+
+
+
+
+
+<style>
+html, body {
+  height: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+</style>
+
+<div class="full-height">
+<div style="background-color:#F49F1C;border:1px solid black;width:1100px;height:auto;">
+
+<p style="font-size:50px; font-weight:bold; color:white;">New York Railway Tracking System</p>
+
+<style type="text/css">
+A:link {background: #FFFFFF00; text-decoration: none; color: white; font-size:12px;}
+A:visited {background: #FFFFFF00; text-decoration: none; color: white; font-size:12px;}
+A:active {background: #FFFFFF00; text-decoration: none; color: white; font-size:12px;}
+A:hover {background: #FFFFFF00; font-weight:bold; font-size:16px; font-style:normal; color: white;cursor: pointer;}
+</style>
+
+<style>
+table {
+  border-collapse: collapse;
+}
+</style>
+
+<style type="text/css">
+.button1 {
+background-color:navy;
+border:1px solid black;
+width:150px;
+height:20px;
+inline-block;
+}
+
+.button1:hover{
+opacity: 0.5;
+}
+
+
+</style>
+
+<style>
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbutton { 
+  color: white;    
+  border: none;
+  width:150px;
+  height:20px;
+  text-size: 12px;
+  inline-block;  
+  border:1px solid black;
+}
+.dropbutton:hover{
+  opacity: 0.5;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F49F1C;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border:1px solid black;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #F49F1C;
+}
+
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block; background-color: white;}
+
+.dropdown:hover .dropbutton {background-color: navy;}
+
+</style>
+
+
+<table> 
+<tbody><tr> 
+
+
+<td>
+	<a href="homepage.html" style="text-decoration: none;">
+	<div class="button1">	
+<center>
+
+Home 
+
+</center></div>
+</a>
+</td> 
+
+
+<td>
+	
+	
+	<div class="dropdown">
+<center>
+<button class="dropbutton">
+Maps
+</button>
+
+<div class="dropdown-content">
+    <a href="#">Long Island Railroad</a>
+    <a href="#">Metro-North Railroad</a>
+    <a href="#">Bridges & Tunnels</a>
+  </div>
+</center></div></div>
+
+</td> 
+
+</td> 
+
+</td> 
+
+
+<td>
+	<div class="dropdown">
+<center>
+<button class="dropbutton">
+Schedules
+</button>
+
+<div class="dropdown-content">
+    <a href="#">Long Island Railroad</a>
+    <a href="#">Metro-North Railroad</a>
+  </div>
+
+</center></div></div>
+</a>
+</td> 
+
+
+<td>
+	<a href="file:///F:/Homepage%20-%20Copy.txt.html#" style="text-decoration: none;">
+	<div class="button1">
+<center>
+
+Alerts/Delays
+
+</center></div>
+</a>
+</td> 
+   
+
+<td>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+  inline-block;
+  border:1px solid black; 
+
+}
+
+button:hover {
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  color: black;
+}
+
+span.psw {
+  float: right;
+  padding-top: 0px;
+  text-decoration: none;
+  
+  
+}
+
+.psw:hover{
+color: black;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 2px solid #000;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: navy;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="background-color:navy;border:1px solid black;width:150px;height:20px;inline-block;">Login/Sign Up</button>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="Authentication.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+       
+      <a href="Authentication.html"> 
+      <button type="submit">Login</button>
+      </a>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+
+
+    <div class="container" style="background-color:#F49F1C">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot Password? </a><br>
+      <a href="SignUp.html" target="_blank"> Sign Up</a></span>
+      
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</td>
+
+
+</tr> 
+</tbody></table> 
+
+
+<!-------- Sign Up Pop up window --------!>
+
+
+<!---------- END ----------!>
+
+
+
+
+<p>
+
+<div style="background-color:red;border:1px solid black;width:1099px;height:20px;color:red;">
+<a href="alerts.html" style="text-decoration: color:red;">
+<marquee behavior="scroll" direction="left" scrollamount="4">Click here to see Important Alerts / Delays Will that will eventually go here</marquee>
+</a></div>
+
+<style type="text/css">
+.button2 {
+background-color:navy;
+border:1px solid black;
+width:auto;
+height:auto;
+inline-block;
+padding: 5px;
+color:white;
+}
+
+</style>
+
+
+<!-- //////// Start of Table ////// --!>
+
+<table> 
+<tbody><tr> 
+
+<td>
+
+
+<img src="subway entrance.jpg" alt="Subway Entrance" width="500" height="400" style="border:1px solid black;">
+
+<p>
+Schedule A Trip Today!
+<p>
+Now
+<p>
+
+
+</td>
+
+
+
+
+<td>	
+<div class="button2">
+
+<left>
+<p style="font-size:30px"><b><u>Tips for Riding Safely</u></b></p>
+
+This is a placeholder copied from a website...
+
+<p>
+
+Metro Rail Safety<br>
+<ul>
+<li>If you drop something on the trackway, do not attempt to retrieve it.  Instead use the platform intercom to request assistance.<p>
+<li>There is a crawl area underneath the platform that may provide some protection in the event of an accidental fall onto the track.<p>
+<li>Never run after or next to a moving train.<p>
+<li>Don’t play near trains or tracks; pushing and shoving can cause accidents.<p>
+<li>Never climb railroad vehicles or walk on the tracks.<p>
+<li>Always stand away from the edge of platform and never sit on the platform edge.<p>
+<li>Don’t skate or ride your bike on the platform, stairs or escalators.<p>
+<li>Hold on to your child when a train approaches.<p>
+<li>Wait for the vehicle to stop before approaching.<p>
+<li>Wait for exiting passengers to leave, then board.<p>
+<li>Watch your step, especially at night or in wet weather.<p>
+<li>Watch the gap between the platform and train.<p>
+<li>Take a seat if possible; use handrails/handholds.<p>
+<li>Don’t lean against train doors; keep hands clear.<p>
+<li>Be ready to exit when you arrive at your stop.<p>
+<li>Step away after exiting.<p>
+</ul>
+</left>
+</div>
+</td>
+
+</tr> 
+
+</tr> 
+</tbody></table> 
+<!-- //////// End of Table ////// --!>
+
+<p>
+<!-- //////// Start of Table ////// --!>
+
+<table> 
+<tbody><tr> 
+
+<td>		
+<left>
+<div style="width:50;height:100;background-color:navy;color:white;padding:6px;">
+ks
+</div>
+</left>
+</td>
+
+
+<td>	
+<div class="button2">
+
+
+....
+
+
+</div>
+</td>
+
+</tr> 
+
+</tr> 
+</tbody></table> 
+<!-- //////// End of Table ////// --!>
+
+
+ldmldml
+
+
+</div>
+
+
+
+
+</div></div>
+
+Team 4 : Pavel Beliaev  :  Ruilin Wang  :  Claudio Saillant  :  Atai Nail
+
+</center>
+
+
+
+</body></html>
